@@ -13,3 +13,14 @@ workflows:
           ./gradlew assembleDebug
     artifacts:
       - app/build/outputs/apk/debug/*.apk
+
+workflows:
+  android-workflow:
+    name: Android Build
+    max_build_duration: 30
+    scripts:
+      - name: Build Debug APK
+        script: |
+          ./gradlew assembleDebug
+    artifacts:
+      - app/build/outputs/apk/debug/*.apk
