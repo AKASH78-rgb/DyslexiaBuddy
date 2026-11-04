@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="warm_ivory">#FDFBF7</color>
+    <color name="warm_ivory_dark">#F4EFE6</color>
+    <color name="deep_navy">#1E2235</color>
+    <color name="deep_navy_light">#2B304C</color>
+    <color name="soft_teal">#2EC4B6</color>
+    <color name="soft_teal_dark">#239B8F</color>
+    <color name="coral">#FF5A5F</color>
+    <color name="coral_light">#FF888C</color>
+    <color name="lavender">#845EC2</color>
+    <color name="lavender_light">#B39CD0</color>
+    <color name="sunshine_yellow">#FFC75F</color>
+    <color name="card_background">#FFFFFF</color>
+    <color name="text_primary">#1E2235</color>
+    <color name="text_secondary">#64748B</color>
+</resources>

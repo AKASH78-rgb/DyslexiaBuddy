@@ -1,0 +1,12 @@
+<resources>
+    <style name="Theme.DyslexiaBuddy" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/soft_teal</item>
+        <item name="colorSecondary">@color/coral</item>
+        <item name="android:windowBackground">@color/warm_ivory</item>
+        <item name="fontFamily">sans-serif-medium</item>
+    </style>
+
+    <style name="Theme.DyslexiaBuddy.Splash" parent="Theme.DyslexiaBuddy">
+        <item name="android:windowBackground">@drawable/bg_gradient_splash</item>
+    </style>
+</resources>

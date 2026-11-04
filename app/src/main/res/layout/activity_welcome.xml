@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/warm_ivory"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="32dp">
+
+    <View
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:background="@drawable/bg_pill" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hi, I'm Hoot!"
+        android:textColor="@color/deep_navy"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:text="I am your reading and learning companion. Let's explore letters, sounds, and games together in a fun way!"
+        android:textColor="@color/text_secondary"
+        android:textSize="16sp"
+        android:lineSpacingExtra="6dp" />
+
+    <Button
+        android:id="@+id/btnStartLearning"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/bg_button_primary"
+        android:text="Let's Go!"
+        android:textColor="@color/warm_ivory"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:elevation="4dp" />
+
+</LinearLayout>
