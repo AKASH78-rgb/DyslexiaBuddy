@@ -5,9 +5,7 @@ workflows:
     scripts:
       - name: Build Debug APK
         script: |
-          cd DyslexiaBuddy
           chmod +x gradlew
           ./gradlew assembleDebug
     artifacts:
-      - DyslexiaBuddy/app/build/outputs/apk/debug/*.apk
-      
+      - app/build/outputs/apk/debug/*.apk
