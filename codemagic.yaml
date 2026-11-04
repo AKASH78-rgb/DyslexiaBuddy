@@ -1,11 +1,36 @@
 workflows:
-  android-workflow:
-    name: Android Build
-    max_build_duration: 30
+  dyslexia-buddy-workflow:
+    name: Dyslexia Buddy Android Workflow
+    max_build_duration: 60
+    environment:
+      flutter: stable
+      xcode: latest
+      cocoapods: default
     scripts:
-      - name: Build Debug APK
+      - name: Install dependencies
         script: |
+          flutter pub get
+          
+      - name: Ensure Android Gradle Wrapper exists
+        script: |
+          cd android
+          if [ ! -f "gradlew" ]; then
+            gradle wrapper
+          fi
           chmod +x gradlew
-          ./gradlew assembleDebug
+          cd ..
+          
+      - name: Build Flutter APK
+        script: |
+          flutter build apk --release
+          
     artifacts:
-      - app/build/outputs/apk/debug/*.apk
+      - build/app/outputs/flutter-apk/*.apk
+      - build/app/outputs/bundle/release/*.aab
+    publishing:
+      email:
+        recipients:
+          - bakash0781@gmail.com
+        notify:
+          success: true
+          failure: true
